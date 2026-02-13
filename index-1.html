@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For My Nandumma ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://raw.githubusercontent.com/aromalsmanu-hash/for-nandumma/main/a249b13e005534b090eae458d9c1a465.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.55);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.5s ease;
+      max-width: 420px;
+    }
+
+    .cat-img {
+      width: 200px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 25px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      margin: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .yes {
+      background: #00ff95;
+      color: black;
+    }
+
+    .yes:hover {
+      transform: scale(1.1);
+    }
+
+    .no {
+      background: #ff2e63;
+      color: white;
+      position: absolute;
+    }
+
+    .success-img {
+      width: 250px;
+      border-radius: 20px;
+      margin-top: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/aromalsmanu-hash/for-nandumma/main/221ae7d310a996d362f99b59ad06486f.jpg" class="cat-img">
+    <h1>Nandumma, Will You Be Mine Forever? ❤️</h1>
+    <button class="yes" onclick="yesClicked()">YES 💖</button>
+    <button class="no" onmouseover="moveButton()">NO 😜</button>
+  </div>
+
+  <script>
+    function yesClicked() {
+      document.body.innerHTML = `
+        <div style="display:flex;justify-content:center;align-items:center;height:100vh;flex-direction:column;background-image:url('https://raw.githubusercontent.com/aromalsmanu-hash/for-nandumma/main/a249b13e005534b090eae458d9c1a465.jpg');background-size:cover;background-position:center;color:white;text-align:center;padding:20px;">
+          <h1 style="font-size:1.7rem;max-width:500px;">
+          Thoori penne 😘 Unlimited Chakkudu Umma Card is officially yours… Forever & Always ❤️
+          </h1>
+          <img src="https://raw.githubusercontent.com/aromalsmanu-hash/for-nandumma/main/390f0f4fc698e0c115ff52f12ed2778e.jpg" class="success-img">
+        </div>
+      `;
+    }
+
+    function moveButton() {
+      const noBtn = document.querySelector(".no");
+      noBtn.style.top = Math.random() * (window.innerHeight - 60) + "px";
+      noBtn.style.left = Math.random() * (window.innerWidth - 120) + "px";
+    }
+  </script>
+
+</body>
+</html>
